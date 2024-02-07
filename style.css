@@ -1,1 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+
+.top {
+    overflow: hidden;
+    background-color: #c2c2c2;
+  }
+
+.top a,input{
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 17px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+}
+
+input {
+    float: left;
+}
+
+.top a:hover {
+    color:white;
+    background-color: red;
+}
+
+#head {
+
+}
