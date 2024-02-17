@@ -4,7 +4,8 @@
 
 }
 body{
-    background-color: hsl(0, 3%, 6%);
+    border: 5px solid black;
+    background-color: hsl(0, 100%, 100%);
     font-family: calligraffitti-regular ;
     font-size: 3em;
     font-weight: bolder;
@@ -14,17 +15,59 @@ body{
 }
 .top{
     overflow: hidden;
-    border: 3px solid white;
-    color: white;
-    
+    border-bottom: 5px solid black;
+    background-color: rgb(226, 21, 21);
 }
 
 #head{
    float: left;
    color: white;
+   border-right: 5px solid black;
 
 }
 #help{
     float: right;
     color: white;
+    border-left: 5px solid black;
+}
+.pic{
+    border: 3px solid black;
+    text-align: center;
+}
+.form{
+    border: 3px solid black;
+    text-align: center;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+#img1{
+    border-right: 5px solid black;
+    float: left;
+    border-top: 4px solid black;
+}
+#name{
+    text-align: center;
+}
+#reg{
+    color: grey;
+}
+#log{
+    color: black;  
+}
+.or p{
+    font-size: medium;
+    border: 1px solid black;
+    background-color: grey;}
+
+#button1{
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: hsl(7, 89%, 52%);
+    color: white;
+}
+#name{
+    font-size:large;
+}
+.reg_log{
+    border: 3px solid black;
 }
