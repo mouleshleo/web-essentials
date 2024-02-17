@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="Register_style.css" rel="stylesheet">
 </head>
 <body>
+    <form action="index.php" method="post" enctype="multipart/form-data"></form>
     <div class="top">
     <a style=float:left href="./index.html" id="head">Edx</a>
     <a href="#help" id="help">Help</a>
+    </div>
+    <div class="pic">
+    <img src="HD-wallpaper-study-on-bed-bed-book-tea-pen-learn.jpg" id="img1" width="700px" height="656px">
+    </div>       
+        
+    <div class="form">
+        <br>
+        <span class="reg_log"><a href="#register" id="reg">Register</a>
+        <a href="#login" id="log">Login</a></span>
+        <center>
+        <br><input type="text" name="Full-Name" placeholder="Enter Your Full Name" size="30" id="name" required>
+        <br><input type="text" name="email" placeholder="Enter Your Email-id" size="30" id="name" required>
+        <br><input type="tel" name="phone-number" placeholder="Enter Your Phone Number" size="30" id="name" required>
+        <br><input type="text" name="user-Name" placeholder="Enter Your User Name" size="30" id="name" minlength="6" maxlength="15" required>
+        <br><input type="password" name="Password" placeholder="Enter Your Password" size="30" id="name" required>
+        <br><input type="checkbox" name="agree" size="20" id="agree" required>
+        <label id="agreement" style="font-size: large;">I agree that edX may send me marketing messages.</label>
+        <br><input type="submit" style="font-size: large;">
+    <div class="or" style="font-size: large;">
+        <p>Or Register With</p>
+    </div>
+    <a href="#google_reg"><button id="button1">Google</button></a>
+    <a href="#  Apple_reg"><button id="button1">Apple</button></a>
+    <a href="#microsoft_reg"><button id="button1">Microsoft</button>
+    </center>
     </div>
 </body> 
 </html>
