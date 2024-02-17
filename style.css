@@ -1,37 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: content-box;
+  font-family: 'Lato', sans-serif;
+  --bg-color: white;
+  --our-color: rgb(241, 51, 51);
 }
 
 
 .top {
     overflow: hidden;
-    background-color: #c2c2c2;
+    background-color: var(--our-color);
+
   }
 
-.top a,input{
+.top a{
   float: right;
   display: block;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 17px 20px;
+  padding: 25px 20px;
   text-decoration: none;
-  font-size: 17px;
-  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  
 }
 
-input {
-    float: left;
-}
 
 .top a:hover {
-    color:white;
-    background-color: red;
+    color:black;
+    background-color: white;
 }
 
-#head {
+#bgimg {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
 
+.searchbar {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 10px;
+
+  
+}
+
+#searchbtn {
+  top: 75%;
+  border-radius: 30px;
+  border-color: rgb(214, 204, 204);
+
+}
+
+#searchbtn:hover {
+  color: white;
+  background-color: var(--our-color);
+}
+
+#words {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;  
+  z-index: 1;
+}
+
+#btn:hover {
+  color: red;
 }
