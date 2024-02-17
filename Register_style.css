@@ -1,12 +1,8 @@
-@font-face {
-    src: url(fonts/Calligraffitti-Regular.ttf);
-    font-family: calligraffitti-regular;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-}
 body{
-    border: 5px solid black;
-    background-color: hsl(0, 100%, 100%);
-    font-family: calligraffitti-regular ;
+    background-color: hsl(0, 3%, 6%);
+    font-family: 'Lato', sans-serif;
     font-size: 3em;
     font-weight: bolder;
     font-style: normal;

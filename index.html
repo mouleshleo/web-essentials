@@ -7,12 +7,26 @@
     <link href="./style.css" rel="stylesheet">
   </head>
   <body>
+    <script src="https://autotype.zakweb.dev/dist/autotype.min.js" type="text/javascript"></script>
     <div class="top">
-      <a href="#home" id="head" style="float: left;">Edx</a>
-      <input type="search" name="search" size="25" placeholder="what do you want to learn?" id="search">
-      <a href="#register" id="register">register</a>
+      <a href="." id="head" style="float: left;">Edx</a>
+      <a href="./Register_index.html" id="register">register</a>
       <a href="#login" id="login">login</a> 
     </div>
+    <div class="front">
+      <p id="words"></p>
+      <img id="bgimg" src="./reading.jpg" alt="reading book" srcset="" >
+      <input class="searchbar" type="search" name="search" size="75" placeholder="what do you want to learn?" id="search">
+      <svg id="search-icon" class="searchbar" onclick="myfunc()" style="left:72%;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg>
+      <input class="searchbar" id="searchbtn" type="submit" value="search">
+    </div>
+    <div class="second-page">
+      <h1>Explore the courses</h1>
+       
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
 
