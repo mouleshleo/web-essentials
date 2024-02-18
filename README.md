@@ -1,4 +1,6 @@
 # web-essentials
+This is the project of making a website in the domain of education.
+
 moulesh - https://wireframe.cc/7Su6BJ
 moulesh - https://wireframe.cc/rxO078
 Syed_Amash_s -- https://wireframe.cc/Tkcaqt
