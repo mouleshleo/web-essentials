@@ -7,34 +7,37 @@
     <link href="Register_style.css" rel="stylesheet">
 </head>
 <body>
-    <form action="index.php" method="post" enctype="multipart/form-data"></form>
+    <form action="index.php" method="post" enctype="multipart/form-data">
     <div class="top">
     <a href="index.html" id="head" style="text-decoration: none;">edX</a>
-    <a href="#help" id="help" style="text-decoration: none;">Help</a>
+    <a href="#login" id="head" style="text-decoration: none;">login</a>
+    <a href="#help" id="Help" style="text-decoration: none;">Help</a>
     </div>
     <div class="pic">
-    <img src="images/HD-wallpaper-study-on-bed-bed-book-tea-pen-learn.jpg" id="img1" width="700px" height="680px">
+    <img src="images/HD-wallpaper-study-on-bed-bed-book-tea-pen-learn.jpg" id="img1" width="700px" height="780px">
     </div>       
         
     <div class="form">
         <br>
         <span class="reg_log"><a href="Register_index.html">Register</a></span>
         <center>
-    <input type="text" name="Full-Name" placeholder="Enter Your Full Name" size="30" id="name" required>
+               <input type="text" name="Full-Name" placeholder="Enter Your Full Name" size="30" id="name" required>
         <br><input type="text" name="email" placeholder="Enter Your Email-id" size="30" id="name" required>
         <br><input type="tel" name="phone-number" placeholder="Enter Your Phone Number" size="30" id="name" required>
         <br><input type="text" name="user-Name" placeholder="Enter Your User Name" size="30" id="name" minlength="6" maxlength="15" required>
         <br><input type="password" name="Password" placeholder="Enter Your Password" size="30" id="name" required>
         <br><input type="checkbox" name="agree" size="20" id="agree" required>
         <label id="agreement" style="font-size: large;">I agree that edX may send me marketing messages.</label>
-        <br><input type="submit" style="font-size: large;" ><br>
+        <p style="font-size: small;">By creating an account, you agree to the Terms of Service and Honor Code and you </p><p style="font-size: small;">that edX and each Member process your personal data in accordance</p><p style="font-size: small;">the Privacy Policy.</p>
+        <input type="submit" class="form" style="font-size: large;" value="Create an Account for Free" ><br>
     <div class="or" style="font-size: large;">
-        <br><p>Or Register With</p>
+        <br><br><p>Or Register With</p>
     </div>
- <br>  <div class="else"> <a href="#google_reg"><button id="button1">Google</button></a>
-    <a href="#  Apple_reg"><button id="button1">Apple</button></a>
-    <a href="#microsoft_reg"><button id="button1">Microsoft</button></div>
+ <br>  <span class="else"> <a href="#google_reg">Google</a></span>
+  <span class="else"><a href="#  Apple_reg">Apple</a></span>  
+  <span class="else"><a href="#microsoft_reg">Microsoft</span>
     </center>
     </div>
+</form>
 </body> 
 </html>
