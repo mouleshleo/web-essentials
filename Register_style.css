@@ -1,55 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body{
-    background-color: hsl(0, 3%, 6%);
-    font-family: 'Lato', sans-serif;
+    background-color: hsl(0, 100%, 100%);
+    font-family: 'lato',sans-serif;
     font-size: 3em;
     font-weight: bolder;
     font-style: normal;
+   
     
 
 }
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: content-box;
+    font-family: 'Lato',sans-serif;
+
+}
 .top{
+    
     overflow: hidden;
-    border-bottom: 5px solid black;
-    background-color: rgb(226, 21, 21);
+    background-color:rgb(22, 19, 19);
+    position: sticky;
+    z-index: 10;
+    
 }
-
-#head{
-   float: left;
-   color: white;
-   border-right: 5px solid black;
-
-}
-#help{
+.top a{
     float: right;
+    display: block;
     color: white;
-    border-left: 5px solid black;
-}
-.pic{
-    border: 3px solid black;
     text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.top a:hover{
+        background-color: white;
+        color: black;}
+#head{float: left;}
+
+
+.pic{
+    
+    background-size: cover;
+    text-align: center;
+    float: left;
 }
 .form{
-    border: 3px solid black;
     text-align: center;
-    border-bottom: 0px;
-    border-top: 0px;
 }
 #img1{
     border-right: 5px solid black;
-    float: left;
-    border-top: 4px solid black;
-}
-#name{
-    text-align: center;
-}
-#reg{
-    color: grey;
-}
-#log{
-    color: black;  
-}
+    float: left;}
+
+#name{text-align: center;}
 .or p{
     font-size: medium;
     border: 1px solid black;
@@ -58,12 +62,29 @@ body{
 #button1{
     font-size: 25px;
     border-radius: 5px;
-    background-color: hsl(7, 89%, 52%);
+    background-color: hsl(0, 0%, 7%);
     color: white;
+    padding: 5px;
 }
 #name{
     font-size:large;
 }
-.reg_log{
-    border: 3px solid black;
+.reg_log {
+    overflow: hidden;
+    background-color:rgb(22, 19, 19);
+    position: sticky;
+    z-index: 10;
 }
+.reg_log a{
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.reg_log a:hover{
+    background-color:white;
+    color:black;
+}
+
+
