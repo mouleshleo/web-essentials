@@ -112,3 +112,25 @@ input[type=submit]:hover{
     background-color: white;
     color: black;
 }
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius:2px 2px 10px 10px;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:   rgb(109, 109, 109);
+  }
+  
+  /* scroll bar */
