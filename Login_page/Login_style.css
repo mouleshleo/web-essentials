@@ -2,7 +2,6 @@
 
 body{background-color: hsl(0, 100%, 100%);
     font-size: 3em;
-    font-weight: bolder;
     font-style: normal;
 }
 
@@ -36,6 +35,7 @@ body{background-color: hsl(0, 100%, 100%);
 }
 .form{
     text-align: center;
+    border-radius: 5px;
 }
 #img1{
     border-right: 5px solid black;
@@ -83,9 +83,12 @@ body{background-color: hsl(0, 100%, 100%);
     width: 9%;
     position: relative;
     cursor: pointer;
-    right: 19%;
     float: right;
+    right:7%;
     text-align: center;
+    border: 15px solid white;
+    border-radius: 25px;
+
 }
 .else a{
     color: white;
@@ -96,6 +99,7 @@ body{background-color: hsl(0, 100%, 100%);
     font-size: 20px;
     bottom: 2%;
     text-align: center;
+    border-radius: 10px;
 
 }
 .else:hover{
