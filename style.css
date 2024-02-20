@@ -171,3 +171,16 @@ footer p {
   top: 50px;
   cursor: pointer;
 }
+.select{
+  background-color: rgb(22, 19, 19);
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid rgb(22, 19, 19);
+}
+.select:hover{
+  background-color: rgb(22, 19, 19);
+  color: white;}

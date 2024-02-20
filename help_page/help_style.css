@@ -103,14 +103,14 @@
   color: white;
   text-decoration: none;
   font-size: larger;
-  background-color: black;
+  background-color: rgb(22, 19, 19);
   border-right:50px solid white;
   padding: 20px;
 
 }
 .p a:hover{
   background-color: white;
-  color: black;
+  color: rgb(22, 19, 19);
 }
 
 /* scroll bar */
