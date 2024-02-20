@@ -135,9 +135,9 @@ color: black;
   display: grid;
   position: relative;
   text-align: center;
-  width: 1400px;
+  width: 1200px;
   grid-template-columns: repeat(3,1fr);
-  left: 50px;
+  left: 130px;
   top: 50px;
   gap: 50px;
 }
