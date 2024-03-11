@@ -1,36 +1,42 @@
-<html>
-  <head>
-    <title>MaP</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body style="background-color:lightgrey;">
-    <div class="top">
-      <a href="../index.html" id="head" style="text-decoration: none;">MaP</a>
-      <a href="../Login_page/Login_index.html" id="head" style="text-decoration: none;">Learn</a>
-      <a href="../help_page/help_index.html" id="Help" style="text-decoration: none;">Login</a>
-      <a href="../help_page/help_index.html" id="Help" style="text-decoration: none;">Register</a><br><br><br>
-  <input type="text" placeholder="What do you want to learn ?" class="text"></div>
-  </body>
-    <hr>
-    <br>
-    <p style="font-size: larger; margin-left: .4%;">Refine your search</p><br><br><br>
-    <form method="post" action="index.php">
-      <Label style="margin-left: .5%; font-size: x-large; font-weight: bold;">Subject</Label><br><br><br>
-      <input type="checkbox" style="margin-left: 1.5%;">
-      <label style=" font-size:large;">Python</label><br><br>
-      <input type="checkbox" style="margin-left: 1.5%;">
-      <label style=" font-size:large;">C</label><br><br>
-      <input type="checkbox"style="margin-left: 1.5%;">
-      <label style=" font-size:large;">
-        Javascript
-      </label></form>
-    <div class="box" style="background-image: url(th.jpeg); color: white; font-size: x-large;">
-      <p>Python</p><br><br><br>
-    <button>Course</button></div>
-    <div class="boxx" style="background-image:url(th.jpeg); color: white; font-size: x-large;" >
-      <p>C</p><br><br><br>
-    <button>Course</button></div>
-    <div class="boxxx" style="background-image:url(th.jpeg); color: white; font-size: x-large;">
-      <p>Javascript</p><br><br><br>
-    <button>Course</button></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
+  <title>MaP</title>
+</head>
+<body style="overflow-x: hidden;">
+  <div class="top">
+    <a href="." id="head" style="float: left;">MaP</a>
+    <select class="select" style="float: left;" onchange="location = this.value;">
+      <option value="./index.html">Home</option>
+      <option value="#profile">My Profile</option>
+      <option value="#mycourses">My Courses</option>
+      
+      <option value="./help_page/help_index.html">Help</option>
+      <option value="#aboutus">About us</option>
+  </select>
+    <a href="./Register_page/Register_index.html" id="register">Register</a>
+    <a href="./Login_page/Login_index.html" id="login">Login</a> 
+  </div><br><br><br><br><br><br>
+  <h1 id="one">MIT&nbsp; Openware&nbsp; : &nbsp;&nbsp;Python</h1><br><br><br><br>
+  <div id="pa">
+  <p id="two">Python's convenience has made it the most popular language for machine learning and AI.</p><br>
+  <p id="three">Python's flexibility has allowed Anyscale to make easy.</p><br>
+  <P> This course is offered by <a href="yt.link">MIT Openware</a>.</P><br>
+  <button id="pb">Enroll</button>
+  <iframe id="pp" width="560" height="315" src="https://www.youtube.com/embed/Y6J8I056Ffw?si=yG8Qz0jYTf7FRPXF" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming. Wikipedia
+    Designed by: Guido van Rossum
+    Developer: Python Software Foundation
+    First appeared: 20 February 1991; 33 years ago
+    OS: Windows, macOS, Linux/UNIX, Android, Unix-like systems, BSD variants and a few other platforms
+    Paradigm: Multi-paradigm: Object-oriented, Procedural (Imperative), Functional, Structured, Reflective</p>
+
+</div>
+
+  
+</body>
 </html>
