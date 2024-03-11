@@ -15,15 +15,26 @@
 #pa{
 	position: absolute;
 	left: 50.5px;
+    font-family: 'Lato';
 }
 #pb{
 	background-color: black;
 	color: white;
 	font-size: 135%;
+    padding: 6px;
+    
     
 }
 #pp{
 	position: absolute;
-	left: 723px;
-	top: -55px;
+	left: 780px;
+	top: -70px;
+}
+#pp1{
+    width: 45%;
+}
+#ppp{
+    margin-left: 1.8%;
+    word-spacing:4px;
+
 }
