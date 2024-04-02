@@ -9,4 +9,5 @@ new kursor({
     removeDefaultCursor: true,
     color: '#000000',
 
-})
+});
+

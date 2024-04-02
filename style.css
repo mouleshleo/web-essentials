@@ -7,6 +7,7 @@
 	padding: 0;
 	box-sizing: content-box;
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -51,7 +52,7 @@ input[type="search"]::-webkit-search-cancel-button {
   display: block;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 25px 20px;
+  padding: 27px 20px;
   text-decoration: none;
   text-decoration: none;
   font-size: 20px;
@@ -193,6 +194,7 @@ footer p {
 }
 .select:hover{
   background-color: rgb(22, 19, 19);
-  color: white;}
+  color: white;
+}
 
   
