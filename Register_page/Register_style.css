@@ -78,40 +78,61 @@ body{background-color: hsl(0, 100%, 100%);
 }
 
 .else{
-    background-color:rgb(22, 19, 19);
-    border-radius: 10px;   
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-flow: wrap;
 
 }
 .else a{
     color: white;
-    padding:20px 20px 40px 20px;
+    padding: 13px;
+    border-radius: 7px;
+    background-color: #000;
     position: relative;
     top: -10px;
+    border: 1px solid black;
     text-decoration: none;
     font-size: 20px;
-}
-.else:hover{
-    background-color: white;
-}
-.else a:hover {
-    color: black;
+    box-shadow: 0px 6px #bbb;
 }
 
+.else a:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 6px #666;
+}
+
+.else a:active {
+    transform: translateY(4px);
+    transition: all 0.4s;
+    box-shadow: 0px 0px #000;
+}
 
 input[type=submit]{
     background-color: rgb(22, 19, 19);
     color: white;
     border-style: outset;
-    border-color: grey;
+    border-color: rgb(0, 0, 0);
     font: 20px;
     font-family: 'Lato',sans-serif;
     cursor: pointer;
     padding: 10px;
     font-weight: bold;
+    box-shadow: 0px 6px #999;
+
     }
 input[type=submit]:hover{
     background-color: white;
     color: black;
+    box-shadow: 0px 6px #666;
+
+}
+
+input[type=submit]:active {
+    transform: translateY(4px);
+    transition: all 0.4s;
+    box-shadow: 0px 0px #000;
 }
 /* scroll bar */
 

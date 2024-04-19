@@ -226,7 +226,8 @@ div.skills {
   position: relative;
   top: 80px;
   grid-template-columns: repeat(3,1fr);
-  gap: 40px;
+  gap: 30px;
+  padding: 20px;
 }
 
 .card-text {
@@ -238,7 +239,6 @@ div.skills > div {
   color: black;
   padding: 30px;
   margin: 10px 20px 0 20px;
-  flex: 100px;
   font-size: 30px;
   border-radius: 6px;
 }
@@ -262,3 +262,30 @@ div.footer-nav {
 .footer-nav > div:not(:hover) {
 opacity: 0.5;
 }
+
+
+
+#loader:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 50px;
+  width: 50px;
+  -webkit-animation: eclipse 1.2s infinite ease ;
+          animation: eclipse 1.2s infinite ease alternate-reverse;
+  border-radius: 100%; 
+background-color: white;}
+
+
+@keyframes eclipse {
+  from {
+    -webkit-box-shadow: inset 50px 0 0 0 black;
+            box-shadow: inset 50px 0 0 0 black; }
+  to {
+    -webkit-box-shadow: inset -50px 0 0 0 black;
+            box-shadow: inset -50px 0 0 0 black; } 
+}
+
