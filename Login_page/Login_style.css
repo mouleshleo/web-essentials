@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius:2px 2px 10px 10px;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:   rgb(109, 109, 109);
+  }
+  
+  /* scroll bar */
+
 body{background-color: hsl(0, 100%, 100%);
     font-size: 3em;
     font-style: normal;
@@ -79,72 +102,57 @@ body{background-color: hsl(0, 100%, 100%);
 }
 
 .else{
-    background-color:rgb(22, 19, 19);
-    width: 9%;
     position: relative;
     cursor: pointer;
-    float: right;
-    right:7%;
-    text-align: center;
-    border: 15px solid white;
-    border-radius: 25px;
-
-}
-.else a{
     color: white;
-    padding:20px 20px 40px 20px;
-    position: relative;
-    top: -10px;
-    text-decoration: none;
-    font-size: 20px;
-    bottom: 2%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
-    border-radius: 10px;
+}
+.else > a {
+    background-color: #000;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px #bbb;
+    border: 2px solid black ;
+}
 
-}
-.else:hover{
-    background-color: white;
-}
-.else a:hover {
+.else > a:hover {
     color: black;
+    box-shadow: 0px 6px #666;
+    transform: scale(50px);
     background-color: white;
+    transition: all 0.2s;
 }
 
+.else > a:active {
+    transform: translateY(4px);
+    box-shadow: 0px 2px #000;
+}
 
 input[type=submit]{
     background-color: rgb(22, 19, 19);
     color: white;
-    border-style: outset;
-    border-color: grey;
     font: 20px;
     font-family: 'Lato',sans-serif;
     cursor: pointer;
     padding: 10px;
     font-weight: bold;
+    box-shadow: 0px 6px #bbb;
     }
 input[type=submit]:hover{
     background-color: white;
     color: black;
+    box-shadow: 0px 5px #666;
 }
-/* scroll bar */
 
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius:2px 2px 10px 10px;
-  
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background:   rgb(109, 109, 109);
-  }
-  
-  /* scroll bar */
+input[type=submit]:active {
+    transition: all 0.2s;
+    transform: translateY(5px);
+    box-shadow: 0px 0px #000;
+}

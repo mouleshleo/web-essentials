@@ -46,7 +46,7 @@
     transform: translate(-50%, -50%);
     padding: 18px;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
   
     
@@ -73,44 +73,64 @@
 }
 .searchbar{
   text-align: center;
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top:50vh;
+    left: 48%;
     padding: 18px;
     font-size: 18px;
     border: none;
+    box-shadow: 0px 6px #bbb;
 }
 #searchbtn {
-  border-radius: 40px;
+  border-radius: 10px;
   cursor: pointer;
 
 }
 
 #searchbtn:hover {
   color: white;
+  box-shadow: 0px 6px #666;
   background-color: black;
 }
-.p{
-  top: 450px;
-  left: 17%;
-  margin-right: 17%;
 
+#searchbtn:active {
+  transform: translateY(4px);
+  transition: all 0.2s;
+  box-shadow: 0px 2px #ffffff;
+}
+
+.p{
+position: relative;
+top: 65vh;
+display: flex;
+justify-content: center;
+align-items: center ;
+gap: 60px;
+flex-flow: wrap;
   
 }
 .p a{
-  overflow: hidden;
   color: white;
+  border-radius: 7px;
   text-decoration: none;
   font-size: larger;
   background-color: rgb(22, 19, 19);
-  border-right:50px solid white;
+  box-shadow: 0px 6px #bbb;
   padding: 20px;
+  border: 2px solid black;
+
 
 }
 .p a:hover{
   background-color: white;
   color: rgb(22, 19, 19);
+  box-shadow: 0px 6px #666;
+}
+
+.p > a:active {
+transform: translateY(4px);
+box-shadow: 0px 0px black;
+transition: all 0.2s;
 }
 
 /* scroll bar */
