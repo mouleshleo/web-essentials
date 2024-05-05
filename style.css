@@ -152,14 +152,14 @@ color: black;
 }
 
 .box {
-  display: grid;
+  display: flex;
   position: relative;
+  justify-content: space-between;
   text-align: center;
-  width: 1200px;
-  grid-template-columns: repeat(3,1fr);
-  left: 130px;
+  left: 150px;
   top: 50px;
-  gap: 50px;
+  gap: 140px;
+  flex-wrap: wrap;
 }
 
 
@@ -274,4 +274,11 @@ div.footer-nav {
 
 .footer-nav > div:not(:hover) {
 opacity: 0.5;
+}
+
+
+@media screen and (max-width: 700px) {
+  #search {
+    width: 90%;
+  }
 }
