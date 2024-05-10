@@ -5,6 +5,8 @@ function project() {
 }
 
 
+
+
 new kursor({
     type: 2,
     removeDefaultCursor: true,
@@ -17,4 +19,6 @@ window.addEventListener("resize",() => {
     const box = document.querySelector(".box");
     box.style.width = (widthOfBox - 200) + "px";
 });
+
+
 
