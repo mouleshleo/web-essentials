@@ -6,10 +6,11 @@
     <title>Log-in-Page</title>
     <link href="Login_style.css" rel="stylesheet">
     <link rel="stylesheet" href="../kursor.css">
+    <script src="login.js"></script>
     
 </head>
 <body>
-    <form action="index.php" method="post" enctype="multipart/form-data">
+   
     <div class="top">
     <a href="../index.html" id="head" style="text-decoration: none;">MaP</a>
     <a href="../Register_page/Register_index.html" id="head" style="text-decoration: none;">Register</a>
@@ -22,10 +23,12 @@
     <div class="form">
         <br>
         <span class="reg_log"><a href="Login_index.html" >Log in</a></span>
+    <form action="login.php" method="post">
         <center>          
-        <input type="text" name="user-Name" placeholder="Enter Your User Name" size="40" class="name" minlength="6" maxlength="15" required>
-        <br><input type="password" name="Password" placeholder="Enter Your Password" size="40" class="name" required><br>
-       <br> <input type="submit" class="form" style="font-size: large;" value="Log in" ><br>
+        <input type="text" name="email" placeholder="Enter Your Email-id" size="40" id="usr" class="name">
+        <br><input type="password" name="password" placeholder="Enter Your Password" size="40" id="pass" class="name"><br>
+       <br><div id="submi"><input type="submit" class="form" style="font-size:large" onclick="return validatelogin()"></div> <br>
+    </form>
        <div class="or" style="font-size: large;">
         <br><a href="#forgot-password" style="text-decoration: none; color: black;">Forgot Password ?</a>
     </div>
@@ -42,6 +45,5 @@
 </div>
     </center>
     </div>
-</form>
 </body> 
 </html>
