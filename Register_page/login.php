@@ -22,7 +22,7 @@
         phone INT,
         password VARCHAR(30) NOT NULL
         );";
-        
+
         if (!mysqli_query($conn, $createdb)) {
           echo "error: ". mysqli_error($conn);
         }
@@ -45,7 +45,8 @@
        }
 
         if(mysqli_query($conn,$sql)){
-             header("location: ../index.html");
+            echo "<h1>registed sucessfully !!<h1>";
+             header("refresh:2;url=../index.html");
         }
         else{
             echo "sorry error $sql".mysqli_error($conn);
