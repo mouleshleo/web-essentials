@@ -8,32 +8,52 @@
 
        extract($_POST);    
 
-        $conn = mysqli_connect("localhost","root","","Map_Register");
+        $conn = mysqli_connect("localhost","root","");
         if($conn === false){
-             die("Error : Could not connect. " 
-             . mysqli_connect_error());
+             die("Error : Could not connect. " . mysqli_connect_error());
         }
-       if($password===$passwordd){ 
-        
-       $password=md5($password);
-       $checkemail="SELECT * FROM register where email='$email' ";
+       $createdb = "CREATE DATABASE IF NOT EXISTS map_register;";
+       $select = "USE map_register;";
+       $createtable = "CREATE TABLE IF NOT EXISTS register (
+        id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        fullname VARCHAR(300) ,
+        email VARCHAR(255),
+        username VARCHAR(300) ,
+        phone BIGINT(11),
+        password VARCHAR(255) 
+        );";
+
+        if (!mysqli_query($conn, $createdb)) {
+          echo "error: ". mysqli_error($conn);
+        }
+    
+        mysqli_query($conn, $select);
+
+        if (!mysqli_query($conn, $createtable)) {
+          echo "Error creating table: " . mysqli_error($conn);
+        }
+        if($password===$passwordd){
+        $password=md5($password);
+       $checkemail="SELECT * FROM register where email='$email'";
        $result=mysqli_query($conn,$checkemail);
-       if($result->num_rows>0){
+       
+       if(mysqli_num_rows($result) > 0){
         echo "Email address already exists !!";
+        exit();
        }
        else{
-        $sql= "INSERT INTO register VALUES('$name','$email','$phone','$username','$password')";
+        $sql= "INSERT INTO register (fullname, email, username, phone, password) VALUES('$name','$email','$username','$phone','$password')";
        }}
        else{
-         echo "Both passwords are Different reenter your password";
+        echo "Both Password are not same !! Please Check it !!";
        }
 
         if(mysqli_query($conn,$sql)){
-             header("location: ../index.html");
+            echo "<h1>registed sucessfully !!<h1>";
+            header("refresh:2;url=../index.html");
         }
         else{
-            echo "sorry error $sql"
-            .mysqli_error($conn);
+            echo "sorry error $sql".mysqli_error($conn);
         }
   mysqli_close($conn);
   ?>
