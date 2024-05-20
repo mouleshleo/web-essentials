@@ -22,26 +22,14 @@
 
     <?php 
        include 'connect.php';
-       extract($_POST);    
+
+       extract($_POST);  
+
        $password=md5($password);
-       $createdb = "CREATE DATABASE IF NOT EXISTS map_register;";
-       $select = "USE map_register;";
-       $createtable = "CREATE TABLE IF NOT EXISTS register (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        fullname VARCHAR(30) NOT NULL,
-        email VARCHAR(60),
-        username VARCHAR(30) NOT NULL,
-        phone INT,
-        password VARCHAR(30) NOT NULL
-        );";
-       if (!mysqli_query($conn, $createdb)) {
-        die("error : ". mysqli_error($conn));
-       }
-       mysqli_query($conn, $select);
-       mysqli_query($conn, $createtable);
+       
         $sql= "SELECT * FROM register WHERE email='$email' and password='$password' ";
         $result=$conn->query($sql);
-        if(mysqli_num_rows($result) > 0){
+        if($result->num_rows> 0){
             session_start();
             $row=$result->fetch_assoc();
             $_SESSION['email']=$row['email'];
@@ -52,9 +40,10 @@
         else{
             echo "<div>
             <h1>Incorrect username or password</h1><br><br>
-            <p>you will be redirected in 2 seconds</p>
+            <h2>If you Don't have an account! Please Register First !!</h2><br><br>
+            <p>you will be redirected in 5 seconds</p>
             </div>";
-            header("refresh: 2;url=./Login_index.html");
+            header("refresh: 5;url=./Login_index.html");
         }
   ?>
 

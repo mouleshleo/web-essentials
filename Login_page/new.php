@@ -21,16 +21,17 @@ include("connect.php");
     $email=$_SESSION['email'];
     $query=mysqli_query($conn, "SELECT register.* FROM `register` WHERE register.email='$email'");
     while($row=mysqli_fetch_array($query)){
-        echo $row['FullName'];
+        echo $row['fullname'];
     }
      
     }
 ?>
+</p>
 <h2>You Have Logged in successfully!!</h2>
 <br>
 <br>
 <a href="logout.php" style="font-size: 30px">Log out</a>
-</p>
+
 
 
 </div>
