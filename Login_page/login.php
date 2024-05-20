@@ -9,15 +9,22 @@
        extract($_POST);    
        $password=md5($password);
        $createdb = "CREATE DATABASE IF NOT EXISTS map_register;";
-       $select = "USE DATABASE map_register;";
-       $createtable = "CREATE TABLE IF NOT EXISTS register {
+       $select = "USE map_register;";
+       $createtable = "CREATE TABLE IF NOT EXISTS register (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        email"
+        fullname VARCHAR(30) NOT NULL,
+        email VARCHAR(60),
+        username VARCHAR(30) NOT NULL,
+        phone INT,
+        password VARCHAR(30) NOT NULL
+        );";
        if (mysqli_query($conn, $createdb)) {
             echo "successfull<br>";
        } else {
         echo "error : ". mysqli_error($conn);
        }
+       mysqli_query($conn, $select);
+       mysqli_query($conn, $createtable);
         $sql= "SELECT * FROM register WHERE email='$email' and password='$password' ";
         $result=$conn->query($sql);
         if($result->num_rows>0){
