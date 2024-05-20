@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <form action="./Register_index.html" id="myform" method="post" enctype="multipart/form-data">
+    <form action="login.php" method="post" enctype="multipart/form-data">
     <div class="top">
     <a href="../index.html" id="head" style="text-decoration: none;">MaP</a>
     <a href="../Login_page/Login_index.html" id="head" style="text-decoration: none;">login</a>
@@ -22,14 +22,13 @@
     <div id="form">
         <br>
         <center>
-        <span class="reg_log"><a href="Register_index.html">Register For Free</a></span>
 
-        <input type="text" name="fullname" placeholder="Enter Your Full Name" size="40" class="name">
-        <br><input type="text" name="email" placeholder="Enter Your Email-id" size="40" class="name">
-        <br><input type="tel" name="phonenumber" placeholder="Enter Your Phone Number" size="40" class="name">
-        <br><input type="text" name="username" placeholder="Enter Your User Name" size="40" class="name" minlength="6" maxlength="15">
+               <input type="text" name="name" placeholder="Enter Your Full Name" size="40" class="name">
+        <br><input type="text" name="email" placeholder="Enter Your Email-id" size="40" class="name" >
+        <br><input type="tel" name="phone" placeholder="Enter Your Phone Number" size="40" class="name" >
+        <br><input type="text" name="username" placeholder="Enter Your User Name" size="40" class="name" >
         <br><input type="password" name="password" placeholder="Enter Your Password" size="40" class="name">
-        <br><input type="checkbox" name="agree" size="20" id="agree">
+        <br><input type="checkbox" name="agree" size="20" id="agree" required>
         <label id="agreement" style="font-size: large;">I agree that MaP may send me marketing messages.</label>
         <p style="font-size: small;">By creating an account, you agree to the Terms of Service and Honor Code and you </p><p style="font-size: small;">that MaP and each Member process your personal data in accordance</p><p style="font-size: small;">the Privacy Policy.</p>
         <input type="submit" name="submit" class="form" style="font-size: large;" value="Create an Account for Free" ><br>
