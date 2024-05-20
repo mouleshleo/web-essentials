@@ -41,11 +41,11 @@
             echo "<div>
             <h1>Incorrect username or password</h1><br><br>
             <h2>If you Don't have an account! Please Register First !!</h2><br><br>
-            <p>you will be redirected in 5 seconds</p>
+            <p>you will be redirected in 7 seconds</p>
             </div>";
-            header("refresh: 5;url=./Login_index.html");
+            header("refresh: 7;url=./Login_index.html");
         }
   ?>
-
+ <div style="margin-bottom: 0%; margin-top: 10%; text-decoration:none; font-size:25px"><a href="../Register_page/Register_index.html">Register</a></div> 
 </body>
 </html>
