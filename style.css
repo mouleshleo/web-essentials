@@ -64,21 +64,32 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  z-index: 0;
+  z-index: -1;
+}
+
+.search-all {
+  position: relative;
+  top: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
 }
 
 .searchbar1 {
-  position: relative;
-  top: 240px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; 
 }
 
 .searchbar {
   text-align: center;
-  position: absolute;
-  top: 60%;
-  left: 50%;
   outline: none;
-  transform: translate(-50%, -50%);
   padding: 18px;
   font-size: 18px;
   border-radius: 10px;
@@ -86,12 +97,12 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #searchbtn {
-  top: 75%;
   border-radius: 20px;
   width: 110px;
+  font-size: 1.1em;
   padding: 16px;
   background-color: #f8f8f8;
-  box-shadow: 4px 7px #999;
+  box-shadow: 2px 7px #bbb;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -99,11 +110,14 @@ input[type="search"]::-webkit-search-cancel-button {
 #searchbtn:hover {
   color: white;
   background-color: black;
-  box-shadow: 4px 7px #454545;
+  box-shadow: 2px 7px #666;
+  border: 2px solid white;
 
 }
 #searchbtn:active {
-  box-shadow: 3px 4px #454545;
+  transition: all 0.4s;
+  transform: translate(2px,7px);
+  box-shadow: 0px 0px #000;
 
 }
 #words {
@@ -117,9 +131,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #search-icon {
-  position: relative;
-  top: 5px;
-  left: 71%;
+  margin-left: -40px;
   cursor: pointer;
 color: black;
 }
@@ -140,15 +152,16 @@ color: black;
 }
 
 .box {
-  display: grid;
+  display: flex;
   position: relative;
+  justify-content: space-between;
   text-align: center;
-  width: 1200px;
-  grid-template-columns: repeat(3,1fr);
-  left: 130px;
+  left: 150px;
   top: 50px;
-  gap: 50px;
+  gap: 140px;
+  flex-wrap: wrap;
 }
+
 
 .card-body {
   text-align: left;
@@ -264,28 +277,8 @@ opacity: 0.5;
 }
 
 
-
-#loader:before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  height: 50px;
-  width: 50px;
-  -webkit-animation: eclipse 1.2s infinite ease ;
-          animation: eclipse 1.2s infinite ease alternate-reverse;
-  border-radius: 100%; 
-background-color: white;}
-
-
-@keyframes eclipse {
-  from {
-    -webkit-box-shadow: inset 50px 0 0 0 black;
-            box-shadow: inset 50px 0 0 0 black; }
-  to {
-    -webkit-box-shadow: inset -50px 0 0 0 black;
-            box-shadow: inset -50px 0 0 0 black; } 
+@media screen and (max-width: 700px) {
+  #search {
+    width: 90%;
+  }
 }
-

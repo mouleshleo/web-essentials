@@ -4,6 +4,9 @@ function project() {
     window.open("https://github.com/mouleshleo/web-essentials");
 }
 
+
+
+
 new kursor({
     type: 2,
     removeDefaultCursor: true,
@@ -11,19 +14,11 @@ new kursor({
 
 });
 
-document.addEventListener("DOMContentLoaded",() => {
- setTimeout(() => {
-    hideLoader();
-    showContent();
-},3000);
+window.addEventListener("resize",() => {
+    const widthOfBox = window.innerWidth;
+    const box = document.querySelector(".box");
+    box.style.width = (widthOfBox - 200) + "px";
 });
 
-function hideLoader() {
-    const loader = document.getElementById("loader");
-    loader.style.display = 'none';
-}
 
-function showContent() {
-    const content = document.getElementById("content");
-    content.style.display = 'block';
-}
+

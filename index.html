@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello world</title>
+    <title>MaP</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./style.css" rel="stylesheet">
@@ -14,8 +14,7 @@
 
   </head>
   <body>
-    <div id="loader"></div>
-    <div id="content" style="display: none;">
+    <div id="content">
     <script src="https://autotype.zakweb.dev/dist/autotype.min.js"></script>
     <div class="top">
       <a href="." id="head" style="float: left;">MaP</a>
@@ -31,18 +30,23 @@
       <a href="./Login_page/Login_index.html" id="login">login</a> 
     </div>
     <div class="front">
+
       <p id="words"></p>
       <img id="bgimg" src="./images/reading.jpg" alt="reading book">
+      <div class="search-all">
       <div class="searchbar1">
       <input style="border: 1px solid;" class="searchbar" type="search" name="search" size="75" placeholder="what do you want to learn?" id="search">
       <svg xmlns="http://www.w3.org/2000/svg" id="search-icon" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
       </svg>
     </div>
-      <input  class="searchbar" id="searchbtn" type="submit" value="search">
+      <input id="searchbtn" type="submit" value="search">
     </div>
+  </div>
+
     <div class="second-page" id="second-page">
       <h1 data-aos="fade-right" data-aos-once="true" data-aos-duration="3500">Popular courses</h1>
+      <div class="container1">
       <div class="box">
         <div data-aos="fade-in" class="card" style="width: 18rem;">
           <img class="card-img-top" src="./images/python.png" alt="Card image cap">
@@ -72,9 +76,9 @@
           </div>
         </div>
       </div>
-
-
     </div>
+    </div>
+
     <section>
       <p>skills learned through our website</p>
       <div class="skills">
@@ -117,7 +121,8 @@
  
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+AOS.init();
+
     </script>
   </body>
 </html>
