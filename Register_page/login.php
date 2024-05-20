@@ -13,6 +13,8 @@
              die("Error : Could not connect. " 
              . mysqli_connect_error());
         }
+       if($password===$passwordd){ 
+        
        $password=md5($password);
        $checkemail="SELECT * FROM register where email='$email' ";
        $result=mysqli_query($conn,$checkemail);
@@ -21,7 +23,11 @@
        }
        else{
         $sql= "INSERT INTO register VALUES('$name','$email','$phone','$username','$password')";
+       }}
+       else{
+         echo "Both passwords are Different reenter your password";
        }
+
         if(mysqli_query($conn,$sql)){
              header("location: ../index.html");
         }

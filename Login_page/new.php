@@ -26,6 +26,7 @@ include("connect.php");
      
     }
 ?>
+<h2>You Have Logged in successfully!!</h2>
 <br>
 <br>
 <a href="logout.php" style="font-size: 30px">Log out</a>
