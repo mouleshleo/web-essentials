@@ -27,7 +27,7 @@
        mysqli_query($conn, $createtable);
         $sql= "SELECT * FROM register WHERE email='$email' and password='$password' ";
         $result=$conn->query($sql);
-        if($result->num_rows>0){
+        if($result){
             session_start();
             $row=$result->fetch_assoc();
             $_SESSION['email']=$row['email'];
