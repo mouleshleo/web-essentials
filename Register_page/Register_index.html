@@ -22,16 +22,16 @@
     <div id="form">
         <center>
             <form action="login.php" method="post">
-               <input type="text" name="name" placeholder="Enter Your Full Name" size="40" class="name">
-        <br><input type="text" name="email" placeholder="Enter Your Email-id" size="40" class="name" >
-        <br><input type="tel" name="phone" placeholder="Enter Your Phone Number" size="40" class="name" >
+               <input type="text" name="name" placeholder="Enter Your Full Name" size="40" class="name" required>
+        <br><input type="text" name="email" placeholder="Enter Your Email-id" size="40" class="name" required >
+        <br><input type="tel" name="phone" placeholder="Enter Your Phone Number" size="40" class="name" required>
         <br><input type="text" name="username" placeholder="Enter Your User Name" id="username" size="40" class="name" >
         <br><input type="password" name="password" placeholder="Enter Your Password" id="password" size="40" class="name">
-        <br><input type="password" name="passwordd" placeholder="ReEnter Your Password" size="40" class="name">
+        <br><input type="password" name="passwordd" placeholder="ReEnter Your Password" size="40" id="passwordd" class="name">
         <br><input type="checkbox" name="agree" size="20" id="agree" required>
         <label id="agreement" style="font-size: large;">I agree that MaP may send me marketing messages.</label>
         <p style="font-size: small;">By creating an account, you agree to the Terms of Service and Honor Code and you </p><p style="font-size: small;">that MaP and each Member process your personal data in accordance</p><p style="font-size: small;">the Privacy Policy.</p>
-        <input type="submit" name="submit" class="form" style="font-size: large;" value="Create an Account for Free"><br>
+        <input type="submit" name="submit" class="form" style="font-size: large;" value="Create an Account for Free" onclick="return validate()"><br>
     </form>
         <div class="or" style="font-size: large;">
         <br><br><p>Or Register With</p>
