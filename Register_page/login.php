@@ -49,8 +49,8 @@
        }
 
         if(mysqli_query($conn,$sql)){
-            echo "<h1>registed sucessfully !!<h1>";
-            header("refresh:2;url=../index.html");
+            echo "<h1>Registed sucessfully !!<h1>";
+            header("refresh:3;url=../index.html");
         }
         else{
             echo "sorry error $sql".mysqli_error($conn);
